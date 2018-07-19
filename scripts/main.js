@@ -36,14 +36,14 @@ function check() {
           break;  
         case "Own":
           part1="your own mail server<br>"
-          part8="<span class='bold'>Mail server:</span><br>a. We need all emails to be forwarded from abuse@"+main_domain+" and postmaster@"+main_domain+" to delivery@expertsender.com<br>b. We also need to have a direct access to delivery@"+main_domain+"<br><br>"
+          part8="<span class='bold'>Mail server:</span><br>a. We need all emails to be forwarded from abuse@"+main_domain+" and postmaster@"+main_domain+" to delivery@companyx.com<br>b. We also need to have a direct access to delivery@"+main_domain+"<br><br>"
           break;
       }
       document.getElementById("result").innerHTML = "<div>Domain records setup instructions for "+main_domain+"<br><br>"+
       
       "Hello, "+first_name+"<br><br>"+
       
-      "At ExpertSender we put the reputation ownership in your hands. This means you will need to configure the DNS records of your sending and <span class='purple'>link masking ("+link_domian+")</span> domains at your domain hosting company.<br><br>"+
+      "At Company X we put the reputation ownership in your hands. This means you will need to configure the DNS records of your sending and <span class='purple'>link masking ("+link_domian+")</span> domains at your domain hosting company.<br><br>"+
       
       "The setup requires a little bit of work with adjusting the domain records<br>but shouldn't take more than 10 minutes, even for a non-technical person.<br><br>"+
       "Please follow these instructions, including "+part1+"<br>"+'Every DNS record should be checked at <a href="http://www.dnswatch.info/">http://www.dnswatch.info/</a><br><br>'+
@@ -59,7 +59,7 @@ function check() {
       
       "<br><br><span class='bold'>CNAME record"+part2+" ("+part3+"link masking setup):</span><br>"+
       part4+
-      "new CNAME record for <span class='purple'>links."+link_domian+"</span> pointing to: click-s"+document.forms[0].elements["OutputId"].value+"-"+document.forms[0].elements["country"].value+".esv2.com.<br><br>"+
+      "new CNAME record for <span class='purple'>links."+link_domian+"</span> pointing to: click-s"+document.forms[0].elements["OutputId"].value+"-"+document.forms[0].elements["country"].value+".esvx.com.<br><br>"+
       
       "<span class='bold'>MX records ("+part5+"bounce and Feedback Loop setup):</span><br>"+
       part6+
@@ -324,24 +324,24 @@ function transfer() {
         
         +"<h5><span class='bold'>API</span></h5>"
         +"To utilize API calls for managing your lists and campaigns please follow this link:<br>"
-        +"<a href= https://sites.google.com/a/expertsender.com/api-documentation/>https://sites.google.com/a/expertsender.com/api-documentation</a><br>"
+        +"<a href= https://sites.google.com/a/companyx.com/api-documentation/>https://sites.google.com/a/companyx.com/api-documentation</a><br>"
         +"You will need the API key. It can be found inside Settings > Business unit > API.<br>" 
         +"All of the ID numbers are available in the respective sections of your account.<br><br>"
 
         +"<h5><span class='bold'>DYNAMIC CONTENT</span></h5>"
         +"Please find our dynamic content documentation below:<br>"
-        +"<a href=https://sites.google.com/a/expertsender.com/dynamic-content-documentation/home>https://sites.google.com/a/expertsender.com/dynamic-content-documentation/home</a><br><br>"
+        +"<a href=https://sites.google.com/a/companyx.com/dynamic-content-documentation/home>https://sites.google.com/a/companyx.com/dynamic-content-documentation/home</a><br><br>"
         
         +"<h5><span class='bold'>WORKFLOWS</span></h5>"
         +"User Guide on Workflows (a marketing automation feature that allows designing<br>" 
         +"chains of marketing events in any type of campaign: lead nurturing, reactivation,<br>" 
         +"abandoned shopping cart, etc.) is accessible through the following link:<br>"
-        +"<a href=http://resources.expertsender.com/workflow-user-guide/>http://resources.expertsender.com/workflow-user-guide</a><br><br>"
+        +"<a href=http://resources.companyx.com/workflow-user-guide/>http://resources.companyx.com/workflow-user-guide</a><br><br>"
 
         +"<h5><span class='bold'>CONTACT</span></h5>"
-        +"If you can't find the required answers at <a href=http://resources.expertsender.com/qa/ >http://resources.expertsender.com/qa/</a><br>" 
-        +"please reach out to us via <a href='mailto:experts@expertsender.com'>experts@expertsender.com</a> or in case of very urgent<br>"+ 
-        "situations via <a href='mailto:alert@expertsender.com'>alert@expertsender.com</a>(e.g. being unable to access the platform).<br><br>"
+        +"If you can't find the required answers at <a href=http://resources.companyx.com/qa/ >http://resources.companyx.com/qa/</a><br>" 
+        +"please reach out to us via <a href='mailto:experts@companyx.com'>experts@companyx.com</a> or in case of very urgent<br>"+ 
+        "situations via <a href='mailto:alert@companyx.com'>alert@companyx.com</a>(e.g. being unable to access the platform).<br><br>"
         
         +"Good luck!</pt><br>";
  
@@ -469,7 +469,7 @@ function polish_check(y) {
       +"<span class='bold'>Rekordy TXT (SPF, Gmail Postmaster Tools i DKIM):</span><br>"+
       "nowy rekord TXT dla "+main_domain+" wskazujący: v=spf1 "+part7+" include:"+spf_tag+" -all<br>"+
       "nowy rekord TXT dla "+main_domain+" wskazujący: "+google_site_verification+"<br>"+
-      "nowy rekord TXT dla expertsender._domainkey."+main_domain+" wskazujący: <div id='dkim_out'>"+dkim+"</div><br>"+
+      "nowy rekord TXT dla companyx._domainkey."+main_domain+" wskazujący: <div id='dkim_out'>"+dkim+"</div><br>"+
         
       part8+
 
@@ -613,7 +613,7 @@ function polish_transfer () {
 
         +"<h5><span class='bold'>2) Jakość danych</span></h5>"
         +"Wszystkie adresy email, które w przeszłości (przed rozpoczęciem wysyłek z platformy<br>"
-        +"ExpertSender) zwróciły twarde zwrotki, należy dodać albo do czarnej listy albo do listy<br>" 
+        +"companyx) zwróciły twarde zwrotki, należy dodać albo do czarnej listy albo do listy<br>" 
         +"wykluczeń w Jednostce Biznesowej. Ponadto, warto rozważyć zaprzestanie wysyłek do<br>"
         +"tych subskrybentów, którzy nie otworzyli żadnej wiadomości przez co najmniej sześć<br>"
         +"miesięcy od daty dodania do listy. W rezultacie umożliwi to spore zmniejszenie ryzyka <br>"
@@ -695,24 +695,24 @@ function polish_transfer () {
        
         +"<h5><span class='bold'>API</span></h5>"
         +"Instrukcje wywołań API dla list i kampanii znajdują się pod poniższym linkiem:<br>"
-        +"<a href= https://sites.google.com/a/expertsender.com/api-documentation/>https://sites.google.com/a/expertsender.com/api-documentation</a><br>"
+        +"<a href= https://sites.google.com/a/companyx.com/api-documentation/>https://sites.google.com/a/companyx.com/api-documentation</a><br>"
         +"Klucz API dostępny jest w zakładce Ustawienia > Jednostka Biznesowa > API.<br><br>"
   
         +"<h5><span class='bold'>TREŚĆ DYNAMICZNA</span></h5>"
         +"Nasza dokumentacja znajduje się pod poniższym linkiem:<br>"
-        +"<a href=https://sites.google.com/a/expertsender.com/dynamic-content-documentation/home>https://sites.google.com/a/expertsender.com/dynamic-content-documentation/home</a><br><br>"
+        +"<a href=https://sites.google.com/a/companyx.com/dynamic-content-documentation/home>https://sites.google.com/a/companyx.com/dynamic-content-documentation/home</a><br><br>"
 
       
         +"<h5><span class='bold'>SCENARIUSZE AUTOMATYZACJI</span></h5>"
         +"Przewodnik Użytkownika (funkcjonalność automatyzacji działań marketingowych,<br>" 
         +"która umożliwia tworzenie ścieżek zdarzeń marketingowych dla różnych kampanii:<br>" 
         +"lead nurturing, reaktywacyjne, porzucone koszyki zakupowe itp.) znajduje się tutaj:<br>"
-        +"<a href=http://resources.expertsender.com/workflow-user-guide/>http://resources.expertsender.com/workflow-user-guide</a><br><br>"
+        +"<a href=http://resources.companyx.com/workflow-user-guide/>http://resources.companyx.com/workflow-user-guide</a><br><br>"
 
         +"<h5><span class='bold'>KONTAKT</span></h5>"
-        +"Gdy brakuje szukanych odpowiedzi na stronie <a href=http://resources.expertsender.com/qa/ >http://resources.expertsender.com/qa/</a><br>" 
-        +"nasz zespół jest dostępny pod adresem <a href='mailto:experts@expertsender.com'>experts@expertsender.com</a> lub w sytuacjach<br> alarmowych (np. brak dostępu do systemu) pod adresem "+ 
-        "<a href='mailto:alert@expertsender.com'>alert@expertsender.com</a><br><br>"
+        +"Gdy brakuje szukanych odpowiedzi na stronie <a href=http://resources.companyx.com/qa/ >http://resources.companyx.com/qa/</a><br>" 
+        +"nasz zespół jest dostępny pod adresem <a href='mailto:experts@companyx.com'>experts@companyx.com</a> lub w sytuacjach<br> alarmowych (np. brak dostępu do systemu) pod adresem "+ 
+        "<a href='mailto:alert@companyx.com'>alert@companyx.com</a><br><br>"
         
         +"Powodzenia!</pt><br>";
   
