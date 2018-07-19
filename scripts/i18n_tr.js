@@ -55,10 +55,10 @@ var translate = {
     faq_a2: "The tool was made to help you with Business Unit Setup, however it doesn't have data validation fields. Make sure you take following into consideration:",
     faq_a2_1:"1. Make sure to check previous SPF records for E-commerce customers and adjust records to needs of a client,",
     faq_a2_2:"2. Always check if all the data is correct with DNS verification tool",
-    faq_a2_3:"3.  In DNS verifcation tool you will need to manually delete '/' sign from the DKIM key to make it work in 'verify DNS' panel in ExpertSender",
+    faq_a2_3:"3.  In DNS verifcation tool you will need to manually delete '/' sign from the DKIM key to make it work in 'verify DNS' panel in companyx",
     faq_a2_4: "4.  There is only version for four IPs in DNS instructions, make sure to check how many IPs are being assigned and adjust accordingly",
     faq_a3: "Please report any issues or ideas to improve the tool to",
-    faq_a3_1: "konrad.korf@expertsender.com"  
+    faq_a3_1: "konrad.korf@companyx.com"  
   },
   pl: {
     m1: "BUStool",
@@ -119,7 +119,7 @@ var translate = {
     faq_a2_3:"3.Tworząc rekord DKIM do instrukcji DNS, nalezy usunąć znak '/' z jej treści, aby w zakładce 'weryfikacja DNS' jednostki biznesowej weryfikacja przebiegła pomyślnie,",
     faq_a2_4: "4.  Obecnie jest narzucona sztywna ilość IPików w instrukcji, jest w planach wersja z ilością IPików, podawanych przez użytkownika",
     faq_a3: 'Jeśli zauważysz jakiś błąd lub masz sugestię dotyczącą tego narzędzia napisz do:',
-    faq_a3_1: "konrad.korf@expertsender.com"
+    faq_a3_1: "konrad.korf@companyx.com"
   },
   ru: {
     m1: "BUStool",
@@ -173,9 +173,9 @@ var translate = {
     faq_a2_2: "2. Убедитесь, что все записи верны с использованием внешних инструментов, например DNSWatch",
     faq_a2_3: "3. При создании записи DKIM для инструкции DNS удалите символ '/' из его содержимого, чтобы проверка прошла успешно на вкладке 'Проверка DNS' бизнес-единицы",
     faq_a2_4: "4. В настоящее время в инструкциях имеется жесткое количество IP-адресов, есть планы по версии с количеством IP-адресов, предоставленных пользователем",
-    faq_a3: "Пожалуйста, сообщайте о любых проблемах или идеи, которые улучшают инструмент + <a href=mailto:konrad.korf@expertsender.com> konrad.korf@expertsender.com </a>",
+    faq_a3: "Пожалуйста, сообщайте о любых проблемах или идеи, которые улучшают инструмент + <a href=mailto:konrad.korf@companyx.com> konrad.korf@companyx.com </a>",
     faq_a3: 'Если вы видите ошибку или у вас есть предложение для этого инструмента, напишите:',
-    faq_a3_1: "konrad.korf@expertsender.com"
+    faq_a3_1: "konrad.korf@companyx.com"
   },
   pt: {
     m1: "BUStool",
@@ -233,10 +233,10 @@ var translate = {
     faq_a2: "O BUStool foi feito para ajudá-lo com o Business Unit Setup, no entanto, o não possui campos de validação de dados. Certifique-se de levar em consideração o seguinte:",
     faq_a2_1:"1. Certifique-se de verificar registros SPF anteriores para clientes de comércio eletrônico e ajuste os registros às necessidades de um cliente,",
     faq_a2_2:"2. Sempre verifique se todos os dados estão corretos com o função de verificação de DNS",
-    faq_a2_3:"3. Na pagina de verificação de DNS, você precisará excluir manualmente o sinal '/' da chave DKIM para que funcione no painel 'verify DNS' em ExpertSender",
+    faq_a2_3:"3. Na pagina de verificação de DNS, você precisará excluir manualmente o sinal '/' da chave DKIM para que funcione no painel 'verify DNS' em companyx",
     faq_a2_4: "4. Há apenas uma versão para quatro IPs nas instruções do DNS, certifique-se de verificar quantos IPs estão sendo atribuídos e ajuste de acordo",
     faq_a3: "Por favor, relate quaisquer problemas ou idéias para melhorar o BUStool para",
-    faq_a3_1: "konrad.korf@expertsender.com"  
+    faq_a3_1: "konrad.korf@companyx.com"  
   }
 }; 
 
